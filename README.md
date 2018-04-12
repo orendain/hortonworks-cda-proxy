@@ -1,18 +1,16 @@
-# hortonworks-proxy
+# hortonworks-sandbox-proxy
+
+For use in the Hortonworks Sandbox, included scripts may need tweaking based on sandbox distribution and version (found in private, internal repositories).
 
 ## To Build
 ```
-./generate-nginx-confs.sh
+./generate-proxy-deploy-script.sh
 docker build -t hortonworks/sandbox-proxy .
 ```
 
 
 ## To Deploy
 ```
-docker run --name sandbox-proxy -d hortonworks/sandbox-proxy
+bash /sandbox/proxy/proxy-deploy.sh
 ```
-
-## Optional: override included nginx.conf with the following:
-```
-docker run --name sandbox-proxy -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d hortonworks/sandbox-proxy
-```
+Note: The file above is generated when 'generate-proxy-deploy-script.sh' is run.
