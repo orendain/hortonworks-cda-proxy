@@ -13,4 +13,4 @@ docker build -t hortonworks/sandbox-proxy .
 ```
 bash /sandbox/proxy/proxy-deploy.sh
 ```
-Note: The file above is generated when 'generate-proxy-deploy-script.sh' is run.
+> Note: The file above is generated when 'generate-proxy-deploy-script.sh' is run.
