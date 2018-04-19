@@ -1,0 +1,7 @@
+FROM nginx:latest
+
+LABEL maintainer="eorendain@hortonworks.com"
+
+STOPSIGNAL SIGTERM
+
+CMD ["nginx", "-g", "daemon off;"]
